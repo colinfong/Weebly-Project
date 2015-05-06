@@ -1,0 +1,159 @@
+#sidebar {
+  display: block;
+  padding:0;
+  margin:0;
+  margin-top:42px;
+  box-sizing: border-box;
+  float: left;
+  width: 235px;
+  height: 100%;
+  background: #2C3E50;
+  position:fixed;
+}
+
+.tool {
+  box-sizing: border-box;
+  font-family: ProximaNovaB;
+  color: #9CB3CA;
+  font-size: 13px;
+  text-align: center;
+  height: 36px;
+  line-height: 36px;
+  border-top: 2px solid #1A2733;
+  border-bottom: 2px solid #1A2733;
+  margin-bottom:20px;
+  background-color: #4F657B;
+}
+
+#elements {
+  margin-top:22px;
+}
+
+/*
+.page-editor {
+  font-family: eVAGRoundedStd;
+  height: 30px;
+  width: 80%;
+  text-align: center;
+  line-height: 30px; /*align text to middle
+  border-radius: 4px;
+  
+  margin: 12px auto;
+}*/
+
+
+.page-editor {
+  font-family: 'ProximaNovaB';
+  box-sizing: border-box;
+  padding-left: 17px;
+  border-radius: 4px;
+  font-size: 13px;
+  width:172px;
+  height:34px;
+  text-align:left;
+  line-height: 34px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  background: #4F657B;
+  color:white;
+  border: 1px solid #617588;
+}
+
+.icon {
+  float:right;
+  width:14px;
+  height:14px;
+  margin-right: 11px;
+  margin-top: 8px;
+  display:inline-block;
+  opacity: 0.5;
+}
+
+#x {
+  display:none;
+  background: url("Sprites/Add-Delete-Edit-Icons.png") -53px -51px;
+}
+
+
+.page-editor:hover #x{
+  /*background:#D86A65;
+  border-color:#DC7975;*/
+  display: initial;
+}
+
+
+
+/*Selected Editor Page*/
+
+#selectedEdit {
+  color: white;
+  border: 1px solid #6399CF;
+  background: #518DCA;
+}
+
+/*  
+#selectedEdit:hover {
+  background:#D86A65;
+  border-color:#DC7975;
+}*/
+
+
+/*Add New Page section*/
+
+#add-new {
+  font-family: 'ProximaNovaB';
+  box-sizing: border-box;
+  padding-left: 17px;
+  border-radius: 4px;
+  font-size: 13px;
+  width:172px;
+  height:34px;
+  text-align:left;
+  line-height: 34px;
+  margin: 0 auto;
+  background: #2C3E50;
+  color:#4F657B;
+  border: 2px solid #4F657B;
+}
+
+#add-new:hover #plus{
+  background: url("Sprites/Add-Delete-Edit-Icons.png") -13px -32px; 
+}
+
+#plus {
+  background: url("Sprites/Add-Delete-Edit-Icons.png") -13px -13px;
+}
+
+
+
+#page-text-box {
+  font-family: 'ProximaNovaB';
+  width: 120px;
+  background-color:transparent;
+  border:0px solid;
+  color:#4F657B;
+  font-size: 12px;
+}
+
+#page-text-box:focus {
+  color:white;
+}
+
+.box {
+  display: block;
+  width: 150px; 
+  height: 150px;
+  box-sizing: border-box;
+}
+
+#title-pic {
+  float:left;
+  border-right: 2px solid #21313F;
+  height: 30px;
+  width: 30px;
+  background: url(Sprites/Element-Icons.png) 0 0;
+}
+
+#text-box {
+  float:left;
+}

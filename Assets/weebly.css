@@ -1,0 +1,128 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+/*body {
+  line-height: 1;
+  height: 100%;
+}*/
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+iframe {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+
+/* Set standard fonts*/
+@font-face {
+  font-family: 'ProximaNova';
+  src: url("Font/ProximaNova-Reg.otf") format("opentype");
+  font-weight:normal;
+}
+
+@font-face {
+  font-family: 'ProximaNovaB';
+  src: url("Font/ProximaNova-Sbold.otf") format("opentype");
+  font-weight: bold;
+
+}
+
+#topbar {
+  height: 42px;
+  width: 100%;
+  background: #518DCA;
+  border-bottom: 1px solid #6399CF;
+  position:fixed;
+}
+
+#logo {
+  padding-left: 25px;
+}
+
+.switch {
+  font-family: 'ProximaNovaB';
+  box-sizing: border-box;
+  height: 40px;
+  line-height: 40px;
+  width: 122px;
+  background: white;
+  border:2px solid #97AABC;
+  color:#97AABC;
+  border-radius: 5px; 
+  margin: 0 15px 15px 0;
+  display: inline-block;
+  text-align:center;
+}
+
+#selectedSwitch {
+  background: #97AABC;
+  color:white;
+  border-color:#8498AC;
+}
+
+.title {
+  font-size: 17px;
+  border-color:transparent;
+  display:none;
+}
+
+#selectedTitle {
+  display:initial;
+}
+
+.content {
+  border: 2px solid #8FC7FF;
+  border-radius: 3px;
+  width: 98%;
+  min-height: 20px;
+  display:none;
+}
+
+#selectedContent {
+  display:initial;
+}
+

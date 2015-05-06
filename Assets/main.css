@@ -1,0 +1,6 @@
+#main {
+	box-sizing: border-box;
+	margin-left: 250px;
+	/*padding-top: 42px;*/
+	padding: 85px 45px 0px 45px; /*42 top bar + 43 padding, 60-14 for left right*/
+}

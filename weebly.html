@@ -1,0 +1,76 @@
+<!-- TODO
+add text box to pages
+text box invisible
+
+consider:
+object list of tuple names
+anytime anything is focused on, we react by searching for its tuplein list and reference appropriately
+keep track of current clicked page switch for unhighlighting
+	
+Box Shadow
+Animation
+
+1st 2nd 3rd click for page
+	-add the sprites in by section
+	-delete pages
+	-keep a single page constant
+
+Limit # of page switches?
+text box
+	-expand? how?!
+	-scrolldown?
+
+Small Problems
+	Font-weight bold
+	Add new page text test color when clicked (turns to white)
+	Missing blue plus when plus is clicked to add page
+	Clear text value for add new page after new page added
+	Undefined misalignment with unnamed new pages
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Weebly Editor</title>
+		<link rel="stylesheet" href="Assets/weebly.css ">
+		<link rel="stylesheet" href="Assets/sidebar.css">
+		<link rel="stylesheet" href="Assets/main.css">
+		<script src="Assets/functions.js"></script>
+	</head>
+	<body onload="startupEditorandPage()">
+		<!--Header Weebly Bar-->
+		<header id="topbar"><a href="http://www.weebly.com"><img id="logo" src="Assets/Sprites/Weebly-Logo.png" alt="Weebly Logo" style="width:39px;height:39px;"></a></header>
+
+		<!--Selection Bar on left-->
+		<section id="sidebar">
+			<article id="templates">
+				<h1 class="tool" id = "template-name">TEMPLATES</h1>
+				<div class="page-editor" id="e1" onclick="addPage()">
+					PAGE
+					<div class="icon" id="x" onclick=""></div>
+				</div>
+				<div id="add-new">
+					<input type="text" id="page-text-box" placeholder="ADD NEW PAGE">
+					<div class="icon" id="plus" onclick="addPage()"></div>
+				</div>
+			</article>
+			<article id="elements">
+				<h1 class="tool" id = "element-name">ELEMENTS</h1>
+				<div class="box" id="title-box">
+				</div>
+			</article>
+		</section>
+
+		<!--Body To Create Webpage-->
+		<section id="main">
+			<div id="page-sel">
+				<div class="switch" id="s1" onclick="switchCurPage(this)">PAGE</div>
+			</div>
+			<div id="workspace">
+				<input type="text" class="title" id="t1" placeholder = "Add Title Here"></input>
+				<textarea class="content" id="c1" placeholder="Start typing here"></textarea>
+		</section>
+
+	</body>
+</html>
